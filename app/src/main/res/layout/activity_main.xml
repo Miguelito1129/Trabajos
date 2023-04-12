@@ -4,42 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/TextA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dato1"
+        android:textColor="#372443"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+    <Button
+        android:id="@+id/Solucion"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#659AF6"
+        android:onClick="Boton"
+        android:text="Resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/TextA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textColor="#000000"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/Solucion"
-                android:layout_width="208dp"
-                android:layout_height="wrap_content"
-                android:onClick="Fibonacci"
-                android:text="Resultado" />
-
-            <TextView
-                android:id="@+id/Resultado"
-                android:layout_width="131dp"
-                android:layout_height="wrap_content"
-                android:text="Resultado"
-                android:textColor="#000000"
-                android:textSize="24sp" />
-        </LinearLayout>
-    </LinearLayout>
+    <Button
+        android:id="@+id/Ubicacion"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#659AF6"
+        android:onClick="Boton2"
+        android:text="Ubicacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
